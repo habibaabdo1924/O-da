@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Seat Booking Site</title>
+    <style>
+        body {
+            background-image: url('default-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"> Oöda</h1>
+            </div>
+            <div class="movie-container">
+                <div class="login-form">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                </div>
+        </div>
+    </div>
+
+    <!-- Rest of the code -->
+
+</body>
+<body>
+    
+                <label> Select a movie:</label>
+                <select id="movie" onchange="changeBackground(this.value)">
+                    <option value="https://pbs.twimg.com/profile_images/1719215266843054080/E2LVIzJO_400x400.jpg">Select movie</option>
+                    <option value="https://www.theedgesusu.co.uk/wp-content/uploads/2022/11/p22335475_v_h8_ab.jpg"180 >SMILE</option>
+                    <option value="https://images.thedirect.com/media/article_big/the-nun-2-release-cast.jpg?imgeng=cmpr_75/" 180>THE NUN 2</option>
+                    <option value="https://asianwiki.com/images/b/b3/My_First_Client-p1.jpg" 200>MY FIRST CLIENT</option>
+                    <option value="https://media0029.elcinema.com/uploads/_315x420_85fb067b87009bcc047b8f19732abf69300a5775020ea8261e4a3c2ae0383134.jpg" 220>MEG 2</option>
+                    <option value="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" 250>OPPENHEIMER</option>
+                </select>
+            </div>
+
+            <div class="container">
+
+                <ul class="showcase">  
+                    <li>
+                        <div class="seat"></div>
+                        <small>Available</small>
+                    </li>
+                    <li>
+                        <div class="seat selected">  
+                            <small>selected</small>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="seat sold"></div>
+                        <small>Sold</small>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="screen"></div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>    
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>    
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                    </div>
+                </div>
+        
+                  
+            </div>
+
+            <p class="text">
+                You have selected <span id="count">0</span> seats for a price of EGP.<span id="total">0</span>
+                <button class="pay-now-button">Pay Now</button>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function changeBackground(imageUrl) {
+            document.body.style.backgroundImage = "url('" + imageUrl + "')";
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
